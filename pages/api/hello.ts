@@ -15,9 +15,9 @@
 // Next.js Edge API Routes: https://nextjs.org/docs/api-routes/edge-api-routes
 import type { NextRequest } from "next/server";
 
-type Data = {
-  name: string
-}
+// type Data = {
+//   name: string
+// }
 
 export const config = {
   runtime: "experimental-edge",
