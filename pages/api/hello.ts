@@ -20,14 +20,17 @@ export const config = {
   runtime: 'experimental-edge',
 }
 
-export default async function (req: NextRequest) {
+export default async function handler(req: NextRequest) {
   return new Response(
-    JSON.stringify({ name: 'John Doe' }),
+    JSON.stringify({
+      name: 'Jim Halpert',
+    }),
     {
       status: 200,
       headers: {
-        'Content-Type': 'application/json'
-      }
+        'content-type': 'application/json',
+        'cache-control': 'public, s-maxage=1200, stale-while-revalidate=600',
+      },
     }
   )
 }
