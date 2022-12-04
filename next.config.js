@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    experimental: {
-        runtime: 'experimental-edge', // 'node.js' (default) | experimental-edge
-      },
+    // experimental: {
+    //     runtime: 'experimental-edge', // 'node.js' (default) | experimental-edge
+    //   },
     reactStrictMode: true,
     swcMinify: true,
 
